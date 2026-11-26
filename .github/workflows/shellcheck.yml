@@ -1,0 +1,35 @@
+name: Shell script checks
+
+on:
+  push:
+    branches: [main, portfolio-ready]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  bash-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install ShellCheck
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes shellcheck
+
+      - name: Check Bash syntax
+        run: |
+          bash -n commands/diagnostics.sh
+          bash -n commands/rollback.sh
+          bash -n experimental/fix.sh
+
+      - name: Run ShellCheck
+        run: |
+          shellcheck commands/diagnostics.sh
+          shellcheck commands/rollback.sh
+          shellcheck experimental/fix.sh
