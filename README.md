@@ -88,6 +88,14 @@ The guest resolution changed with the VirtualBox window size in this final test.
 
 **What this does not prove:** that the experimental `dpkg-divert` change fixed the issue. The final successful test was performed after the original `VBoxDRMClient` path had been restored. No controlled A/B test isolated a single root cause.
 
+### Validation evidence
+
+The following terminal capture records the two observed display modes from the same troubleshooting session. The smaller VM window reported `955x925`; the maximized window reported `1920x937`.
+
+![Terminal evidence showing xrandr output at 955x925 and 1920x937](docs/images/virtualbox-auto-resize-validation.jpg)
+
+These values document the tested machine only. They are not a compatibility guarantee or proof of a single root cause.
+
 ## Repository structure
 
 ```text
