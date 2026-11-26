@@ -1,0 +1,14 @@
+# Diagnostic output and local logs
+*.log
+diagnostics-output.txt
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*~
