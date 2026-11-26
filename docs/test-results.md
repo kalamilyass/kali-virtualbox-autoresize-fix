@@ -25,6 +25,12 @@ This document records observations from the author's Kali Linux VirtualBox troub
 | `VBoxControl guestproperty enumerate` | Returned “Could not contact the host system” |
 | `dpkg-divert --truename /usr/bin/VBoxDRMClient` after rollback | Returned `/usr/bin/VBoxDRMClient` |
 
+## Visual evidence
+
+The terminal capture below records the two observed `xrandr` outputs from the same troubleshooting session.
+
+![Terminal evidence showing 955x925 in a smaller window and 1920x937 when maximized](images/virtualbox-auto-resize-validation.png)
+
 ## Final resize validation
 
 The final successful resize check was performed after restoring the original `/usr/bin/VBoxDRMClient` executable and enabling **View → Auto-resize Guest Display** in the VirtualBox window.

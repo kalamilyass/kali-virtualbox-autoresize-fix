@@ -92,7 +92,7 @@ The guest resolution changed with the VirtualBox window size in this final test.
 
 The following terminal capture records the two observed display modes from the same troubleshooting session. The smaller VM window reported `955x925`; the maximized window reported `1920x937`.
 
-![Terminal evidence showing xrandr output at 955x925 and 1920x937](docs/images/virtualbox-auto-resize-validation.jpg)
+![Terminal evidence showing xrandr output at 955x925 and 1920x937](docs/images/virtualbox-auto-resize-validation.png)
 
 These values document the tested machine only. They are not a compatibility guarantee or proof of a single root cause.
 
@@ -106,6 +106,8 @@ These values document the tested machine only. They are not a compatibility guar
 ├── experimental/
 │   └── fix.sh
 ├── docs/
+│   ├── images/
+│   │   └── virtualbox-auto-resize-validation.png
 │   └── test-results.md
 ├── .github/
 │   └── workflows/
