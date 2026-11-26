@@ -3,7 +3,7 @@
 ![Platform](https://img.shields.io/badge/platform-Kali%20Linux-blue)
 ![Virtualization](https://img.shields.io/badge/virtualization-VirtualBox-orange)
 ![Shell](https://img.shields.io/badge/language-Bash-4EAA25)
-![Status](https://img.shields.io/badge/status-investigated%20%7C%20validated-informational)
+![Status](https://img.shields.io/badge/status-investigated%20%7C%20validated-informational)\n[![Shell checks](https://github.com/kalamilyass/kali-virtualbox-autoresize-fix/actions/workflows/shellcheck.yml/badge.svg?branch=main)](https://github.com/kalamilyass/kali-virtualbox-autoresize-fix/actions/workflows/shellcheck.yml)
 
 A practical Bash-based toolkit and case study for diagnosing automatic display-resizing problems in Kali Linux guests running on Oracle VirtualBox.
 
@@ -14,7 +14,7 @@ A practical Bash-based toolkit and case study for diagnosing automatic display-r
 - [Problem](#problem)
 - [Test environment](#test-environment)
 - [Observed investigation](#observed-investigation)
-- [Final validation](#final-validation)
+- [Final validation](#final-validation)\n- [Detailed test record](docs/test-results.md)
 - [Repository structure](#repository-structure)
 - [Usage](#usage)
 - [Experimental workaround and rollback](#experimental-workaround-and-rollback)
