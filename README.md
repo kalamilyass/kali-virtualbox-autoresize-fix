@@ -97,6 +97,9 @@ The guest resolution changed with the VirtualBox window size in this final test.
 │   └── fix.sh
 ├── docs/
 │   └── test-results.md
+├── .github/
+│   └── workflows/
+│       └── shellcheck.yml
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -168,7 +171,7 @@ The included `commands/rollback.sh` checks the expected diversion and backup fil
 ## Limitations
 
 - Validation was performed on one Kali/VirtualBox configuration.
-- The repository does not yet include automated integration tests against multiple VirtualBox and Guest Additions versions.
+- CI runs Bash syntax checks and ShellCheck, but the repository does not include automated integration tests against multiple VirtualBox and Guest Additions versions.
 - The final successful resize test is an observed result, not proof of a universal fix.
 - The Debian bug reference below is related background, not proof that this machine had the same root cause.
 
